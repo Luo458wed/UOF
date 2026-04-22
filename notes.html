@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程笔记</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="topbar compact">
+      <div class="brand">Study Archive</div>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a class="active" href="notes.html">课程笔记</a>
+        <a href="resources.html">学习资料</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section-heading">
+        <p class="eyebrow">Notes</p>
+        <h1>课程笔记</h1>
+        <p>每张卡片都可以进入独立的 Markdown 详情页。你以后新增笔记时，只需要增加一条索引和一个 .md 文件。</p>
+      </section>
+
+      <section class="toolbar">
+        <input id="notes-search" class="search-input" type="search" placeholder="搜索课程名、关键词、标签">
+        <div id="notes-filters" class="filter-row"></div>
+      </section>
+
+      <section id="notes-list" class="card-list"></section>
+      <p id="notes-empty" class="empty-state hidden">没有匹配到内容，你可以修改关键词或者分类。</p>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
