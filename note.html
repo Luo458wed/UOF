@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>笔记详情</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="topbar compact">
+      <div class="brand">Study Archive</div>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a class="active" href="notes.html">课程笔记</a>
+        <a href="resources.html">学习资料</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="note-shell">
+        <a class="back-link" href="notes.html">返回课程笔记</a>
+        <p class="eyebrow">Markdown Note</p>
+        <h1 id="note-title">加载中...</h1>
+        <div id="note-meta" class="meta-row"></div>
+        <div id="note-tags" class="tag-row note-tags"></div>
+        <p id="note-state" class="empty-state"></p>
+        <article id="note-article" class="markdown-body"></article>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
