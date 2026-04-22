@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习资料库</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">Study Archive</div>
+        <div class="nav-links">
+          <a class="active" href="index.html">首页</a>
+          <a href="notes.html">课程笔记</a>
+          <a href="resources.html">学习资料</a>
+        </div>
+      </nav>
+
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">个人学习站点</p>
+          <h1>把课程笔记、复习提纲和学习资料整理成一个自己能长期使用的网站</h1>
+          <p class="hero-text">这个站点支持课程分类、内容搜索和 Markdown 笔记详情页，适合长期维护。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="notes.html">进入笔记页</a>
+            <a class="button secondary" href="resources.html">进入资料页</a>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="mini-card">
+            <p class="mini-label">当前收录</p>
+            <strong id="note-count">0</strong>
+            <span>篇课程笔记</span>
+          </div>
+          <div class="mini-card">
+            <p class="mini-label">资料条目</p>
+            <strong id="resource-count">0</strong>
+            <span>个学习资源</span>
+          </div>
+          <div class="mini-card">
+            <p class="mini-label">维护方式</p>
+            <span>新增一篇笔记时，只要添加一个 Markdown 文件并更新一次 data.js。</span>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section-heading">
+        <p class="eyebrow">最近笔记</p>
+        <h2>最近更新内容</h2>
+      </section>
+      <section id="latest-notes" class="card-list"></section>
+
+      <section class="section-heading">
+        <p class="eyebrow">推荐资料</p>
+        <h2>常用学习资源</h2>
+      </section>
+      <section id="featured-resources" class="card-list"></section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
